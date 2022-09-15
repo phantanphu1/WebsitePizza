@@ -10,7 +10,7 @@ const AddpizzaController ={
           res.status(500).json(error);
         }
       },
-      GetAnMovie: async (req, res) => {
+      GetAnPizza: async (req, res) => {
         try {
           const movie = await Movie.findById(req.params.id).populate("commment")
           res.status(200).json(this.addPizza);
